@@ -24,6 +24,39 @@ nav h1 {
   padding-top: 1.5%;
 }
 
+nav .navig {
+  position: absolute;
+  left: 0%;
+  top: 10%;
+}
+
+nav .navig ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+nav .navig ul a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+nav .navig ul a:hover {
+  color: #fff4d0;
+  font-size: 1.1em;
+}
+
+nav img {
+  margin-top: -10%;
+  max-height: 50px;
+  width: auto;
+  border-radius: 50%;
+}
+
 nav .connect {
   position: absolute;
   right: 5%;
@@ -60,6 +93,26 @@ nav .connect ul a:hover {
       flex-wrap: wrap;
 }
 
+.container #checktype {
+  font-family: Overwatch;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -100%);
+          transform: translate(-50%, -100%);
+}
+
+.container #checktype #classer {
+  display: none;
+}
+
+.container #checktype #lblclasser {
+  cursor: pointer;
+  background-color: #242424;
+  color: white;
+  margin: 0 10px;
+  padding: 5px;
+}
+
 .container .hero {
   font-family: Overwatch;
   display: inline-block;
@@ -79,7 +132,7 @@ nav .connect ul a:hover {
 .container .hero img {
   padding-bottom: 5%;
   width: 65px;
-  height: 65px;
+  height: auto;
   border-radius: 50%;
 }
 

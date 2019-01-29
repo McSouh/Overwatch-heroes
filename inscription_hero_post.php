@@ -23,6 +23,7 @@ if(isset($_POST['name']) && isset($_POST['password']) && isset($_POST['type']) &
         'difficulty' => $difficulty,
         'description' => $description
     ));
+    
 
     // Recup photo
     $file_info = pathinfo($_FILES["photo"]["name"]);
@@ -31,6 +32,11 @@ if(isset($_POST['name']) && isset($_POST['password']) && isset($_POST['type']) &
     if(in_array($extension_upload, $extension_allowed)){
         move_uploaded_file($_FILES["photo"]["tmp_name"], 'photos/'.$name.'.png');
     }
+
+    // Connexion
+    session_start();
+    $_SESSION['name'] = $name;
+    $_SESSION['password'] = $password;
 };
 // Redirection page d'accueil
 header('Location: index.php');

@@ -20,6 +20,32 @@ nav {
         text-align: center;
         padding-top: 1.5%;
     }
+    .navig {
+        position: absolute;
+        left: 0%;
+        top: 10%;
+        ul {
+            display: flex;
+            list-style: none;
+            a {
+                color: white;
+                margin: 0 10px;
+                text-decoration: none;
+                transition-duration: .3s;
+                &:hover{
+                    color: #fff4d0;
+                    font-size: 1.1em;
+                }
+            }
+        }
+    }
+    img {
+        margin-top: -10%;
+        max-height: 50px;
+        width: auto;
+        border-radius: 50%;
+
+    }
     .connect {
         position: absolute;
         right: 5%;
@@ -45,6 +71,22 @@ nav {
     margin: 5% auto;
     display: flex;
     flex-wrap: wrap;
+    #checktype {
+        font-family: Overwatch;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,-100%);
+        #classer {
+            display: none;
+        }
+        #lblclasser {
+            cursor: pointer;
+            background-color: rgb(36, 36, 36);
+            color: white;
+            margin: 0 10px;
+            padding: 5px;
+        }
+    }
     .hero {
         font-family: Overwatch;
         display: inline-block;
@@ -61,7 +103,7 @@ nav {
         img {
             padding-bottom: 5%;
             width: 65px; 
-            height: 65px; 
+            height: auto; 
             border-radius: 50%;
         }
         p {
